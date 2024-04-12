@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My mony</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Actor&family=Anta&display=swap" rel="stylesheet">
+
+
+
+
+    
+<!----------------------- matrix -------------------------------->
+
+<style>
+ 
+    #matrix {
+position: fixed;
+z-index: 0;
+top: 200px;
+left: 60.5vw;
+width: 25vw;
+height: 50vh;
+background-size: cover;
+border-radius: 20px;
+opacity: 80%;
+border:rgba(255, 255, 255, 0.563) solid 3px ;
+    }
+</style>
+
+<!---------------------------------------- matrix ------------------------------------->
+
+
+</head>
+<body>
+    <div class="container-site">
+        <div class="home">
+            <header class="header-home">
+
+                    <div class="header-cont">
+                        <nav>
+                                <div class="img-header-logo">
+                                    <img src="../images/my-name.png" alt="">
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li><a href="#">Total <span class="">385 | +30</span></a></li>
+                                        <li class="history-li-putton"><a href="../history/history.html" target="_blank" class="history-a-putton"> History</a></li>
+                                        <li class="developer-li-putton"><a href="#" class="developer-a-putton"> Wallet program</a></li>
+                                    </ul>
+                                </div>
+                        </nav>
+                    </div>
+            </header>
+            <div class="content-home">
+                <div class="text-pl-home">
+                    <h1 class="text-h"><span class="text-h-1">Hi , There I'M Talaat</span></h1>
+                    <h2 class="text-h">and I am the developer of this website</h2>
+                    <h2 class="text-h">This website for my mony.</h2>
+                </div>
+                <div class="img-pl-home">
+                    <img src="../images/self-love.png" alt="">
+                   
+  
+
+                           <!-- matrix background -->
+                    
+                 <!------------ matrix background------------->
+
+                 <canvas id="matrix"></canvas>
+                 <script>
+                   // Get the canvas element
+                   var canvas = document.getElementById('matrix');
+                  var ctx = canvas.getContext('2d');
+              
+                  // Set canvas dimensions
+                  canvas.width = window.innerWidth;
+                  canvas.height = window.innerHeight;
+              
+                  // Characters to be displayed in the matrix
+                  var characters = '012345ABCDEFGHIJKL6789MNOPQRSTUVWXYZ';
+              
+                  // Array to store column positions
+                  var columns = [];
+              
+                  // Setting the initial positions of columns
+                  for (var i = 0; i < canvas.width / 20; i++) {
+                      columns[i] = Math.floor(Math.random() * canvas.height);
+                  }
+              
+                  // Drawing function
+                  function draw() {
+                      // Black background to create trail effect
+                      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                      ctx.fillRect(0, 0, canvas.width, canvas.height);
+              
+                      // Text color
+                      ctx.fillStyle = '#00bbff';
+              
+                      // Font style and size
+                      ctx.font = '15px Arial';
+              
+                      // Loop through each column
+                      for (var i = 0; i < columns.length; i++) {
+                          // Pick a random character
+                          var text = characters.charAt(Math.floor(Math.random() * characters.length));
+              
+                          // Draw the character at the current position
+                          ctx.fillText(text, i * 20, columns[i] * 20);
+              
+                          // Move the position of the column down
+                          if (columns[i] * 20 > canvas.height && Math.random() > 0.975) {
+                              columns[i] = 0;
+                          }
+              
+                          columns[i]++;
+                      }
+              
+                      // Delay before next frame
+                      setTimeout(draw, 50); // تغيير الرقم هنا لزيادة أو تقليل سرعة الحركة
+                  }
+              
+                  // Start animation
+                  draw();
+                 </script>
+
+                </div> 
+                <img src="../images/arrow.png" alt="" class="arrow">                                <!-- arrow -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

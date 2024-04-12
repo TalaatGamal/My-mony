@@ -1,0 +1,159 @@
+
+*{
+  font-family: "Almarai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background-image: url(images/isaac-maffeis-YKrcKRISbwM-unsplash.jpg); */
+    /* background-image: url(https://freerangestock.com/sample/140500/digital-padlock-on-tech-background--web-security.jpg); */
+    /* background-image: url(self-love.png); */
+    background-image: url(https://taxleopard.com.au/wp-content/uploads/Top-5-Best-Banks-in-Australia-1-1.jpeg);
+    /* background-color: #8a0000; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+  }
+  
+  .login-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.34);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 380px;
+    height: 300px;
+    margin-left: 190px;
+    border: #ffffff7d solid 2px;
+    z-index: 0;
+  }
+  
+  .login-form {
+    text-align: center;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff0b;
+    color: #ffffff;
+    border: #00909d solid 2px;
+  }
+  
+  .login-form input[type="submit"] {
+    background-color: #000000; /* لون زر تسجيل الدخول */
+    color: rgb(0, 179, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    border: #ffffff8b solid 2px;
+    box-shadow: #00aaff 100px 1px 60px -10px;
+    margin-top: 20px;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  .login-form input[type="submit"]:hover{
+    background-color: #00aaffa8;
+    color: #ffffff;
+  }
+  .left-container {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.623);
+    padding: 20px;
+    border-radius: 20px;
+    width: 500px;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: #ffffff77 solid 2px;
+  }
+  .cont-home{
+    background-color: #000000c7;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+  .login-form .name-img{
+    width: 250px;
+  }
+  .footer .copyright{
+    color: #b4b4b4;	
+    align-items: center;
+    justify-content: center;
+    margin-left: 35vw;
+    margin-top: -10vh;
+  }
+.footer{
+	width: max-content;
+	width: 0 auto;
+	margin-top: 100vh;
+	padding: 40px 0;
+	display: block;
+	justify-content: space-between;
+}
+.name-aa-span{
+  color: #00aaff;
+ }
+.arrow {
+  position: fixed;
+  top: 243px;
+  animation: move-arrow-in 2s linear infinite;
+  width: 11px; 
+  height: 25px;
+  /* margin-top: 200px; */
+  background-color: #00909d00;
+ 
+}
+
+@keyframes move-arrow-in {
+  0% {
+    opacity: 0;
+    transform: translateX(200%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+.login-cont2{
+  background-color: #00243d67;
+  /* background-image: url(images/monitor.png); */
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  width: 380px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 10px;
+  position: absolute;
+  top: 150px;
+  left: 900px;
+  z-index: 1;
+  border: #ffffff82 solid 2px;
+}

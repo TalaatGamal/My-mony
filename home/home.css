@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container-site{
+    background-color: rgb(222, 0, 0);
+    /* background-image: url(https://traveltradejournal.com/wp-content/uploads/2023/07/EgyptAir-2.jpg); */
+    /* background-image: url(images/cib-bank-img.jpeg); */
+    background-image: url(https://taxleopard.com.au/wp-content/uploads/Top-5-Best-Banks-in-Australia-1-1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    min-width: max-content;
+    height: 100vh;
+}
+.home{
+    background-color: rgba(0, 0, 0, 0.734);
+    padding: 10px;
+    min-height: 97.3vh;
+    min-width: 660px;
+}
+.header-home{
+    background-color: rgba(0, 136, 255, 0);
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.header-cont{
+  width: 80vw;
+  overflow: hidden;
+  height: 10vh;
+  margin-left: 140px;
+  border-radius: 20px;
+  box-shadow: #0099ffc9 0px -4px 3px 1px;
+  background-color: #00000000;
+}
+.list{
+  display: inline-block;
+  background-color: rgba(165, 42, 42, 0);
+  width: max-content;
+  height: 50px;
+  overflow: hidden;
+  margin-left: 34vw;
+  margin-top: 2vh;
+}
+.home .header-home ul{
+    background-color: rgba(42, 165, 65, 0);
+    color: #ff00009e;
+    width: max-content;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    left: 59vw;
+    text-decoration: none;
+}
+.header-home nav ul li{
+    margin: 0 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  .header-home nav ul li:hover {
+    background-color: #008cff;
+    color: #ffffff00;
+  }
+  .img-header-logo{
+    display: inline-block;
+    margin-left: 100px;
+    background-color: #22ff0000;
+    width: 100px;
+  }
+  .img-header-logo img{
+    width: 250px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    
+  }
+  .img-pl-home{
+    max-width: 37vw;
+    height: 48vh;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 58vw;
+    top: 200px;
+  }
+  .img-pl-home img{
+    width: 20vw;
+    border-radius: 30px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+    background-color: #00000000;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 20px;
+  }
+  .text-pl-home{
+    background-color: #00bbff00;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 15vw;
+    top: 300px;
+    width: max-content;
+    height: 100px;
+    z-index: 1;
+  }
+  .text-pl-home .text-h{
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+  .home .header-home ul a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .header-home nav ul li .developer-a-putton{
+    color: #ffffff;
+  }
+  .header-home nav ul .developer-li-putton{
+    background-color: #ffffff00;
+    border: 2px solid #ffffff ;
+  }
+  .header-home nav ul .history-li-putton{
+    background-color: rgba(255, 255, 255, 0.673);
+    border: 2px solid #00bbff ;
+  }
+  .header-home nav ul .history-li-putton:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  .header-home nav ul .history-a-putton{
+    color: #005b90;
+  }
+  .header-home nav ul .history-a-putton:hover{
+    color: #ff0000;
+  }
+  .text-h-1{
+    color: #0099ff;
+  }
+  .arrow {
+    position: absolute;
+    right: 25.8vw;
+    top: 60vh;
+    color: #ffffff;
+    animation: arrow-animation 3s infinite;
+    width: 1.8%; 
+    /* box-shadow: #ff0000c9 0px 50px 30px 10px; */
+}
+
+@keyframes arrow-animation {
+    0%{
+        top: 12vh;
+        opacity: 0;
+    }
+    50%{
+        top: 12vh;
+        opacity: 1;
+    }
+    100%{
+        top: 12vh;
+        opacity: 0;
+    }
+}
+.arrow img{
+    width: 30px;
+   
+}
