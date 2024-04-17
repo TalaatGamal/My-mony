@@ -26,7 +26,7 @@ width: 25vw;
 height: 50vh;
 background-size: cover;
 border-radius: 20px;
-opacity: 80%;
+opacity: 90%;
 border:rgba(255, 255, 255, 0.563) solid 3px ;
     }
 </style>
@@ -47,7 +47,7 @@ border:rgba(255, 255, 255, 0.563) solid 3px ;
                                 </div>
                                 <div class="list">
                                     <ul>
-                                        <li><a href="#">Total <span class="">385 | +30</span></a></li>
+                                        <li class="total-li-putton"><a href="#" class="total-a-putton">Total 385<span class="blou-k"> | </span>+30</a></li>
                                         <li class="history-li-putton"><a href="history/history.html" target="_blank" class="history-a-putton"> History</a></li>
                                         <li class="developer-li-putton"><a href="log-in page/index.html" class="developer-a-putton"> login page </a></li>
                                     </ul>
@@ -98,7 +98,7 @@ border:rgba(255, 255, 255, 0.563) solid 3px ;
                       ctx.fillRect(0, 0, canvas.width, canvas.height);
               
                       // Text color
-                      ctx.fillStyle = '#00bbff';
+                      ctx.fillStyle = '#0099ffc9';
               
                       // Font style and size
                       ctx.font = '15px Arial';
@@ -109,10 +109,10 @@ border:rgba(255, 255, 255, 0.563) solid 3px ;
                           var text = characters.charAt(Math.floor(Math.random() * characters.length));
               
                           // Draw the character at the current position
-                          ctx.fillText(text, i * 20, columns[i] * 20);
+                          ctx.fillText(text, i * 20, columns[i] * 3);
               
                           // Move the position of the column down
-                          if (columns[i] * 20 > canvas.height && Math.random() > 0.975) {
+                          if (columns[i] * 10 > canvas.height && Math.random() > 0.975) {
                               columns[i] = 0;
                           }
               
@@ -120,7 +120,7 @@ border:rgba(255, 255, 255, 0.563) solid 3px ;
                       }
               
                       // Delay before next frame
-                      setTimeout(draw, 50); // تغيير الرقم هنا لزيادة أو تقليل سرعة الحركة
+                      setTimeout(draw, 10); // تغيير الرقم هنا لزيادة أو تقليل سرعة الحركة
                   }
               
                   // Start animation

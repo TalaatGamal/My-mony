@@ -18,7 +18,7 @@
     height: 100vh;
 }
 .home{
-    background-color: rgba(0, 0, 0, 0.734);
+    background-color: rgba(0, 0, 0, 0.86);
     padding: 10px;
     min-height: 97.3vh;
     min-width: 660px;
@@ -133,21 +133,34 @@
   .header-home nav ul li .developer-a-putton{
     color: #ffffff;
   }
+  .header-home nav ul li .developer-a-putton:hover{
+    color: #ff0000;
+  }
+  .header-home nav ul .developer-li-putton:hover{
+    background-color: #000000;
+  }
   .header-home nav ul .developer-li-putton{
-    background-color: #ffffff00;
+    background-color: #00000000;
     border: 2px solid #ffffff ;
   }
   .header-home nav ul .history-li-putton{
-    background-color: rgba(255, 255, 255, 0.673);
-    border: 2px solid #00bbff ;
+    background-color: rgba(0, 0, 0, 0.255);
+    border: 2px solid #008cff ;
   }
   .header-home nav ul .history-li-putton:hover{
     background-color: rgb(0, 0, 0);
   }
+  .header-home nav ul .total-li-putton:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  
   .header-home nav ul .history-a-putton{
-    color: #005b90;
+    color: #ffffff;
   }
   .header-home nav ul .history-a-putton:hover{
+    color: #ff0000;
+  }
+  .header-home nav ul .total-a-putton:hover{
     color: #ff0000;
   }
   .text-h-1{
@@ -180,4 +193,7 @@
 .arrow img{
     width: 30px;
    
+}
+.blou-k{
+  color: #009dff;
 }
